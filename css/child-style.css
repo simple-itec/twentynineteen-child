@@ -1,0 +1,100 @@
+/*
+ * Rendre visible les "FLEX"
+ */
+
+header, section, div, footer {
+	border: solid 2px orange;
+	padding: 0px;
+	margin: 0px;
+	color: white;
+	border-radius: 5px;
+}
+
+/*
+ * Squelette du site
+ */
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 72px repeat(6, 1fr);
+}
+
+.box-header { 
+  grid-column-start: 1; 
+  grid-column-end: 8; 
+} 
+
+.box-sidebar { 
+  grid-column-start: 1; 
+  grid-row-start: 2; 
+  grid-row-end: 4; 
+}
+
+.box-content-part1 {
+  grid-column-start: 2;
+  grid-column-end: 8;
+}
+
+.box-content-part2 {
+  grid-column-start: 2;
+  grid-column-end: 8;
+}
+
+.box-footer {
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+
+* {box-sizing: border-box;}
+
+.wrapper {
+    border: 1px solid #f76707;
+    border-radius: 5px;
+    background-color: #fff4e6;
+}
+.wrapper > div {
+    border: 1px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+}
+
+/*
+ * Structure de la partie "HEADER"
+ */
+
+.top-bar {
+	display: flex;
+	z-index: 1;
+	height: 65px;
+	width: 100%;
+}
+
+.top-bar .first-block {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
+}
+
+.top-bar .second-block {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	top: 0px;
+	height: 60px;
+	width: 100%;
+	margin-right: 20px;
+}
+
+.top-bar .first-block header {
+	height: 36px;
+	margin: 0px;
+	padding: 2px 0 0 12px;
+}
+
+
+
