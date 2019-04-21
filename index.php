@@ -17,7 +17,10 @@
 			</div>
 		</div>
 		<div class="box-sidebar">
-
+			<div class="navigationbar">
+					<li><a class="navigationbar-navigation-link" href="#"><i class="fa fa-home"></i></a></li>
+					<li><a class="navigationbar-navigation-link" href="#"><i class="fa fa-server"></i></a></li>
+			</div>
 		</div>
 		<div class="box-content-part1">
 			<div class="content">

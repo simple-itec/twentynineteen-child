@@ -2,13 +2,16 @@
  * Rendre visible les "FLEX"
  */
 
+/*
 header, section, div, footer {
-	border: solid 2px orange;
+	border: solid 2px #151599;
+	background-color: #8A8AEF;
 	padding: 0px;
 	margin: 0px;
 	color: white;
 	border-radius: 5px;
 }
+*/
 
 /*
  * Squelette du site
@@ -16,7 +19,7 @@ header, section, div, footer {
 
 .wrapper {
 	display: grid;
-	grid-template-columns: 72px repeat(6, 1fr);
+	grid-template-columns: [col] 72px repeat(6, 1fr);
 }
 
 .box-header { 
@@ -96,5 +99,23 @@ header, section, div, footer {
 	padding: 2px 0 0 12px;
 }
 
+/*
+ * Configuration de la barre de Navigation "NavigationBar"
+ */
 
+div.box-sidebar {
+	background-color: #f0f0f0;
+}
+
+div.navigationbar {
+	padding: 0px;
+	margin: 0px;
+}
+
+.navigationbar ul {
+	color: #2c374c;
+	list-style-type: none;
+	display: block;
+
+}
 
